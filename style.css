@@ -160,3 +160,34 @@ body {
   font-size: 14px;
   color: #555;
 }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.dribble-icon-footer,
+.footer-content,
+.footer-logos {
+  display: flex;
+  align-items: center;
+}
+
+.footer-content {
+  flex-direction: row;
+  text-align: center;
+}
+
+.footer-logos img {
+  margin: 0 10px;
+  height: 24px;
+  width: auto;
+}
+
+.dribble-icon-footer img {
+  height: 30px;
+  width: auto;
+}
