@@ -7,6 +7,60 @@ body {
   background-color: #ffffff;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2vh 5vw; /* Responsive padding using viewport units */
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.dribble-icon img {
+  height: 4vh;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 3vw; /* use vw for responsive spacing */
+}
+
+.nav-links p {
+  font-size: 1vw;
+  font-weight: 500;
+  color: #0d0c22;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links p:hover {
+  color: #ea4c89; /* Dribbble pink hover */
+}
+
+/* Buttons */
+.navbar-buttons {
+  display: flex;
+  gap: 1.5vw;
+}
+
+.white-button {
+  color: #000;
+  background-color: #fff;
+  border: none;
+  padding: 1vh 2vw;
+  font-size: 1vw;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
 .author-section-design {
   background-color: #ffffff;
   max-width: 1200px;
@@ -28,10 +82,9 @@ body {
 }
 
 .icons {
-  /* margin-left: auto; */
   display: flex;
   align-items: center;
-  gap: 10px; /* space between icons and button */
+  gap: 10px;
 }
 
 .icon-wrapper {
@@ -161,24 +214,51 @@ body {
   color: #555;
 }
 
-footer {
+.footer-width {
+  justify-content: center;
+  margin: 0 5.5vw;
+}
+
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 50px;
 }
+/* .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 20px;
+} */
 
-.dribble-icon-footer,
-.footer-content,
-.footer-logos {
+.dribble-icon-footer {
   display: flex;
   align-items: center;
 }
 
 .footer-content {
-  flex-direction: row;
+  margin: 0 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   text-align: center;
+  width: 100%;
+}
+
+.footer-content p {
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-logos img {
@@ -190,4 +270,18 @@ footer {
 .dribble-icon-footer img {
   height: 30px;
   width: auto;
+}
+
+.below-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+
+.below-footer p {
+  font-size: 14px;
+  color: #6e6d7a;
 }
